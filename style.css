@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    /* margin-top: 3rem; */
+    background-color: #EBAE86;
+}
+
+.parent{
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+}
+.container{
+    background: white;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255,255,255,0.7),
+        rgba(255,255,255,0.5)
+    );
+    border-radius: 0.5rem;
+    flex-grow:1;
+    flex-direction: column;
+    align-items: center;
+    margin : auto;
+    padding: 0.5rem 0; 
+    width : 50vw;
+    display : flex;
+}
+
+input,button{
+    background: grey;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255,255,255,0.7),
+        rgba(255,255,255,0.5)
+    );
+    color:black;
+    border:none;
+    border-radius: 0.5rem;
+    margin : 1rem;
+    padding : 0.5rem;
+    outline:none;
+}
+p{
+    margin:0;
+    padding:0;
+}
+h1{
+    margin-bottom: 0;
+}
+.result-box{
+    padding:0.5rem ;
+    margin-bottom: 2rem;
+    text-align: center;
+    max-width: 24rem;
+    background: grey;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255,255,255,0.7),
+        rgba(255,255,255,0.5)
+    );
+    border-radius: 0.5rem;
+    display:none;
+}
+
+::placeholder {
+    color:black;
+    text-align: center;
+}
+
+img{
+    display: none;
+    max-width: 20rem;
+    padding:0.5rem;
+    border-radius: 0.5rem;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    width : 100%;
+    bottom:0;
+}
+
+.footer_icon{
+    width: 1.7rem;
+    height: 1.7rem;
+    padding: 0.5rem;
+    display: inline;
+}
