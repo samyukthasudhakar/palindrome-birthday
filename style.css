@@ -2,7 +2,7 @@
 
 body{
     font-family: 'Open Sans', sans-serif;
-    /* margin-top: 3rem; */
+    text-align: center;
     background-color: #EBAE86;
 }
 
@@ -23,7 +23,7 @@ body{
     flex-grow:1;
     flex-direction: column;
     align-items: center;
-    margin : auto;
+    margin : 1rem auto;
     padding: 0.5rem 0; 
     width : 50vw;
     display : flex;
@@ -74,7 +74,7 @@ img{
     display: none;
     max-width: 20rem;
     padding:0.5rem;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
 }
 
 .footer{
@@ -92,4 +92,14 @@ img{
     height: 1.7rem;
     padding: 0.5rem;
     display: inline;
+}
+
+@media (max-width:940px){
+    .container{
+        width:85vw;
+        padding:0.5rem;
+    }
+    img{
+        max-width: 15rem;
+    }
 }
