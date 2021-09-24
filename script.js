@@ -38,13 +38,23 @@ function dateVariations(date){
     var ddmmyy = date.day + date.month + date.year.slice(-2);
     var mmddyy = date.month + date.day + date.year.slice(-2);
     var yymmdd = date.year.slice(-2) + date.month + date.day;
-
-    return [ddmmyy,mmddyyyy, yyyymmdd, ddmmyy, mmddyy, yymmdd];
+    if(date.day[0]==0){
+        var dmmyy = date.day[1] + date.month + date.year;
+    }
+    if(date.month[0]==0){
+        var ddmyy = date.day + date.month[1] + date.year;
+    }
+    if(date.day[0]==0 && date.month[0]==0){
+        var dmyy = date.day[1] + date.month[1] + date.year.slice(-2);
+        var dmyyyy = date.day[1] + date.month[1] + date.year
+    } 
+    
+    return [ddmmyyyy,ddmmyy,mmddyyyy, yyyymmdd, ddmmyy, mmddyy, yymmdd,dmmyy,ddmyy,dmyy,dmyyyy];
 
 }
 
 function checkPalindromeForAllDates(allDateFormats){
-    flag=false;
+    let flag=false;
     for (let i=0;i<6;i++){
         if (checkPalindrome(allDateFormats[i])){
             flag=true;
@@ -187,7 +197,6 @@ function checkFoPalindrome(){
         setTimeout(hide,3000);
         alert.innerText="Calculations being done on full speed 🤯"
     }else{
-        console.log("hello")
         alert.innerText="Please pick a date 👆🏽"
     }
     
